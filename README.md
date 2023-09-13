@@ -86,4 +86,9 @@ Stop Time	9/13/2023, 9:56:28 AM
 
 ## Conclusion
 
+In conclusion, I built a simple yet effective honeynet to compare the differences of a very insecure environment to that of one with some baseline controls. There were a lot of interesting things learned and seen which I will bullet point below:
+
++ First and probably the most stand out. It is down right scary just how fast the world outside will find and start trying to attack a physical or virtual machine that is left completely open to the internet. I had an actual moment of high alert when I started looking at the logs of the Windows machine and seeing a multitude of failed login attempts from IP addresses all over the world, mere minutes after bringing it online.
++ This was a great way to work a little deeper in Azure and get to build a slightly more robust network than previous projects. The biggest take-away was just how frequently Azure changes and the need to stay on top of it. It seemed at times there almost daily changes to the way things were working within the Azure enviroment.
++ Through this project I gained a lot of great knowledge through hands-on experience and improving skills with; Azure, Micrsoft Sentinel (SIEM), Microsoft Defender for Cloud, KQL, JSON, Incident Response, Response Playbooks, Firewall Configurations, Netwrok Security Groups, Subnets, Private Endpoints... The list goes on.
 
