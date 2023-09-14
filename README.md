@@ -24,7 +24,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Microsoft Sentinel
 
 
-## High Level Steps and Methodology
+## High Level Steps 
 1. **_Create the honeynet:_** Build the environment within Azure including all virtual machines, storage accounts, key vaults, and security groups.
 2. **_Logging and Monitoring:_** Create a Log Analystics work space to both ingest logs from the virtual machines, databases, and Azure network as well as feed those logs to Microsoft Sentinel which is the SIEM used for our SOC.
 3. *Create Analystics Rules in Sentinel basd of off KQL Queries to trigger alerts.*
@@ -86,9 +86,21 @@ Stop Time	9/13/2023, 9:56:28 AM
 
 ## Conclusion
 
-In conclusion, I built a simple yet effective honeynet to compare the differences of a very insecure environment to that of one with some baseline controls. There were a lot of interesting things learned and seen which I will bullet point below:
+In conclusion, this lab project focused on the creation of a Honeynet with a Security Operations Center (SOC) in Azure, involving meticulous steps to assess and enhance security measures. The project encompassed the following key elements:
 
-+ First and probably the most stand out. It is down right scary just how fast the world outside will find and start trying to attack a physical or virtual machine that is left completely open to the internet. I had an actual moment of high alert when I started looking at the logs of the Windows machine and seeing a multitude of failed login attempts from IP addresses all over the world, mere minutes after bringing it online.
-+ This was a great way to work a little deeper in Azure and get to build a slightly more robust network than previous projects. The biggest take-away was just how frequently Azure changes and the need to stay on top of it. It seemed at times there almost daily changes to the way things were working within the Azure enviroment.
-+ Through this project I gained a lot of great knowledge through hands-on experience and improving skills with; Azure, Micrsoft Sentinel (SIEM), Microsoft Defender for Cloud, KQL, JSON, Incident Response, Response Playbooks, Firewall Configurations, Netwrok Security Groups, Subnets, Private Endpoints... The list goes on.
+- **Architecture:** The Azure-based Honeynet comprised several vital components, including Virtual Network (VNet), Network Security Group (NSG), Virtual Machines (both Windows and Linux), Log Analytics Workspace, Azure Key Vault, Azure Storage Account, and Microsoft Sentinel, forming the foundation for security assessment and monitoring.
+
+- **High-Level Steps:** The project followed a structured process, starting with the creation of the Honeynet environment, logging and monitoring setup, development of analytics rules for alerts, and observation of the environment's security posture. It emphasized the critical stages of incident response, remediation, and ultimately, the implementation of security controls based on both observed vulnerabilities and established standards such as NIST 800-53.
+
+- **Security Transformation:** The project's initial metrics demonstrated vulnerabilities and potential threats in the unsecured environment, including significant event logs, alerts, incidents, and malicious network flows. Post-hardening, the metrics reflected a substantial reduction in security events, highlighting the effectiveness of security controls, including Network Security Group restrictions and the use of Private Endpoints.
+
+Overall, this project illustrated the importance of proactive security measures in Azure environments, showcasing the transition from a vulnerable state to a significantly improved, more secure posture.
+
+## A Few Notable Takeaways
+
+- Rapid External Threats: The immediacy of external threats targeting both physical and virtual machines left exposed to the internet is a cause for serious concern. Notably, after bringing a Windows machine online, a multitude of failed login attempts from worldwide IP addresses occurred within minutes.
+
+- Azure Proficiency and Adaptability: This project provided an opportunity to delve deeper into Azure and construct a more resilient network compared to previous endeavors. It underscored the importance of staying updated, given the frequent and sometimes daily alterations within the Azure environment.
+
+- Expanding Skill Set: This project enriched my practical expertise and enhanced my skills in various areas, including Azure, Microsoft Sentinel (SIEM), Microsoft Defender for Cloud, Kusto Query Language (KQL), JSON, incident response, response playbooks, firewall configurations, network security groups, subnets, and private endpoints, among others.
 
