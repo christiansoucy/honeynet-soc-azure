@@ -94,7 +94,7 @@ In conclusion, this lab project focused on the creation of a Honeynet with a Sec
 
 - **Security Transformation:** The project's initial metrics demonstrated vulnerabilities and potential threats in the unsecured environment, including significant event logs, alerts, incidents, and malicious network flows. Post-hardening, the metrics reflected a substantial reduction in security events, highlighting the effectiveness of security controls, including Network Security Group restrictions and the use of Private Endpoints.
 
-Overall, this project illustrated the importance of proactive security measures in Azure environments, showcasing the transition from a vulnerable state to a significantly improved, more secure posture.
+Overall, this project illustrated the importance of proactive security measures in cloud environments, showcasing the transition from a vulnerable state to a significantly improved, more secure posture.
 
 ## A Few Notable Takeaways
 
